@@ -1,5 +1,5 @@
 body {
-	margin: 0;
+	/* margin: 2em 10em; */
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
 		"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
 		"Helvetica Neue", sans-serif;
@@ -15,17 +15,32 @@ code {
 * {
 	transition-timing-function: ease-in;
 	transition-duration: 0.5s;
+	color: rgb(40, 40, 255);
+	word-wrap: break-word;
+}
+
+/* Common Tags */
+p,
+strong {
+	margin: 0;
+}
+
+input,
+textarea {
+	border: none;
+	outline: none;
+	width: max-content;
+	color: rgb(74, 74, 74);
 }
 
 /* Header Section */
 .header {
-	color: rgb(40, 40, 255);
-	margin: 2em;
-	border: 1px solid;
+	border: 2px solid;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 }
 
 .header > p:first-child {
@@ -33,6 +48,148 @@ code {
 	font-weight: bolder;
 }
 
-.header > p {
+/* Details Section */
+
+.details-section {
+	border: 2px solid;
+}
+
+.details-header {
+	text-align: center;
+	font-weight: bold;
+	text-decoration: underline;
+	font-style: italic;
 	margin: 0;
+}
+
+.details-invoice {
+	display: flex;
+	justify-content: space-between;
+}
+
+.details-invoice > .left {
+	margin: 0 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+}
+
+.details-invoice > .right {
+	margin: 0 1em;
+}
+
+.right-first-key > p,
+.right-second-key > p {
+	padding: 7px 10px;
+}
+
+.right-first-key > input,
+.right-second-key > input {
+	height: 13px;
+	margin: 0 5px;
+}
+
+.right-first-key,
+.right-second-key {
+	display: flex;
+	border: 1px solid;
+	align-items: center;
+}
+
+.details-consignee {
+	margin: 5px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.details-consignee > .left {
+	margin: 0 5px 0 1%;
+}
+
+.details-consignee > .right {
+	margin: 0 1% 0 5px;
+}
+
+.details-consignee > .left > p,
+.details-consignee > .right > p {
+	padding: 0 2px 0 5px;
+	border: 1px solid;
+}
+
+.details-consignee > .left > p > input,
+.details-consignee > .right > p > input {
+	height: 13px;
+	margin: 0 5px;
+}
+
+.details-consignee > .left > p:nth-child(4),
+.details-consignee > .right > p:nth-child(4) {
+	display: flex;
+	justify-content: space-between;
+}
+
+.details-consignee > .left > p:nth-child(2) > input,
+.details-consignee > .right > p:nth-child(2) > input {
+	width: 400px;
+}
+
+.details-consignee > .left > p:nth-child(3) > textarea,
+.details-consignee > .right > p:nth-child(3) > textarea {
+	margin: 2px;
+	width: 350px;
+	height: 50px;
+	word-wrap: break-word;
+	resize: none;
+}
+
+/* Cart Section */
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th,
+td {
+	border: 1px solid;
+	text-align: center;
+	/* margin: 0; */
+}
+
+td > input {
+	height: 13px;
+	margin: 0 5px;
+	/* width: 100%; */
+	text-align: center;
+}
+
+td:first-child,
+td:first-child > input {
+	width: 50px;
+}
+
+td:nth-child(2),
+td:nth-child(2) > input {
+	width: 850px;
+}
+
+td:nth-child(3),
+td:nth-child(3) > input {
+	width: 200px;
+}
+
+td:nth-child(4),
+td:nth-child(4) > input {
+	width: 200px;
+}
+
+td:nth-child(5),
+td:nth-child(5) > input {
+	width: 200px;
+}
+
+td:nth-child(6),
+td:nth-child(6) > input {
+	width: 200px;
 }
