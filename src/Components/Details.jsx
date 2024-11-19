@@ -20,7 +20,9 @@ export default function Details() {
 				</div>
 				<div className="details-invoice">
 					<div className="left">
-						<p>INVOICE NO.</p>
+						<p>
+							INVOICE NO. <input type="text" />{" "}
+						</p>
 					</div>
 					<div className="right">
 						<div className="right-first-key">

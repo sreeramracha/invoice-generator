@@ -24,35 +24,36 @@ export default function Cart() {
 
 		if (name === "serialNumber") {
 			// setSerialNumber(Number(value));
-			updatedRows[index].name = Number(value);
+			updatedRows[index][name] = Number(value);
 		} else if (name === "description") {
 			// setDescription(value);
-			updatedRows[index].name = value;
+			updatedRows[index][name] = value;
 		} else if (name === "hsnCode") {
 			// setHsnCode(value);
-			updatedRows[index].name = value;
+			updatedRows[index][name] = value;
 		} else if (name === "quantity") {
 			// setQuantity(Number(value));
-			updatedRows[index].name = Number(value);
+			updatedRows[index][name] = Number(value);
 		} else if (name === "rate") {
 			// setRate(parseFloat(value));
-			updatedRows[index].name = parseFloat(value);
+			updatedRows[index][name] = parseFloat(value);
 		} else if (name === "taxableValue") {
 			// setTaxableValue(parseFloat(value));
-			updatedRows[index].name = parseFloat(value);
+			updatedRows[index][name] = parseFloat(value);
 		}
 
 		if (index === rows.length - 1) {
 			updatedRows.push({
-				serialNumber: "",
-				description: "",
-				hsnCode: "",
-				quantity: "",
-				rate: "",
-				taxableValue: "",
+				serialNumber: null,
+				description: null,
+				hsnCode: null,
+				quantity: null,
+				rate: null,
+				taxableValue: null,
 			});
 		}
 		setRows(updatedRows);
+		// console.log(rows);
 	}
 
 	return (
@@ -76,7 +77,7 @@ export default function Cart() {
 									<td>
 										<input
 											type="text"
-											value={item.serialnumber}
+											value={item.serialNumber}
 											onChange={(e) =>
 												handleRows(
 													index,
@@ -102,7 +103,7 @@ export default function Cart() {
 									<td>
 										<input
 											type="text"
-											value={item.hsncode}
+											value={item.hsnCode}
 											onChange={(e) =>
 												handleRows(
 													index,
@@ -141,7 +142,7 @@ export default function Cart() {
 									<td>
 										<input
 											type="text"
-											value={item.taxablevalue}
+											value={item.taxableValue}
 											onChange={(e) =>
 												handleRows(
 													index,
