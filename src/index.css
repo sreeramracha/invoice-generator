@@ -98,17 +98,17 @@ textarea {
 }
 
 .details-consignee {
-	margin: 5px;
+	margin: 5px 0;
 	display: flex;
 	justify-content: space-between;
 }
 
 .details-consignee > .left {
-	margin: 0 5px 0 1%;
+	margin: 0 5px 0 2px;
 }
 
 .details-consignee > .right {
-	margin: 0 1% 0 5px;
+	margin: 0 2px 0 5px;
 }
 
 .details-consignee > .left > p,
@@ -150,8 +150,12 @@ textarea {
 
 /* Cart Section */
 
+.cart-details {
+	padding: 0 1px;
+}
+
 table {
-	/* width: 10%; */
+	width: 10%;
 	border-collapse: collapse;
 }
 
@@ -167,36 +171,37 @@ td > input {
 	margin: 0 5px;
 	/* width: 100%; */
 	text-align: center;
+	box-sizing: border-box;
 }
 
 td:first-child,
 td:first-child > input {
-	/* width: 50px; */
+	width: 25px;
 }
 
 td:nth-child(2),
 td:nth-child(2) > input {
-	/* width: 850px; */
+	width: 300px;
 }
 
 td:nth-child(3),
 td:nth-child(3) > input {
-	/* width: 200px; */
+	width: 200px;
 }
 
 td:nth-child(4),
 td:nth-child(4) > input {
-	/* width: 200px; */
+	width: 150px;
 }
 
 td:nth-child(5),
 td:nth-child(5) > input {
-	/* width: 200px; */
+	width: 200px;
 }
 
 td:nth-child(6),
 td:nth-child(6) > input {
-	/* width: 200px; */
+	width: 200px;
 }
 
 /* Footer Section  */
@@ -204,15 +209,94 @@ td:nth-child(6) > input {
 	display: flex;
 	justify-content: space-between;
 	border: 1px solid;
+	text-wrap: nowrap;
 }
 
+.tax {
+	display: flex;
+	flex-direction: column;
+}
+
+.tax p {
+	display: flex;
+	justify-content: space-between; /* Distribute spans evenly */
+	align-items: center; /* Align content vertically */
+	/* gap: 10px; Space between items in a row */
+}
+
+.tax span {
+	flex: 1; /* Ensure spans take equal space */
+	text-align: left; /* Align text to the left */
+}
+
+.tax input {
+	width: 100%; /* Inputs fill their container */
+	box-sizing: border-box; /* Include padding/borders in width */
+}
+
+.tax span:nth-child(3), /* For the '%' spans specifically */
+.tax span:nth-child(5) {
+	flex: 0.2; /*  Smaller size for the '%' spans */
+	text-align: center; /* Center the '%' symbol */
+}
+/* 
 .footer-amount > .price-words > p,
-.footer-amount > .tax > p {
+.footer-amount > .tax > p:first-child {
 	margin: 3px 5px;
 }
 
+.footer-amount > .tax > p:nth-child(5) {
+	margin: 0.1em 5em;
+} */
+
 .footer-amount > .tax {
 	border: 1px solid;
+}
+
+.footer-amount > .tax > p {
+	margin: 0 0;
+}
+
+.footer-amount > .tax > p > span {
+	border: 1px solid;
+	padding: 2px;
+}
+/* 
+.footer-amount > .tax > p:nth-child(2) > span:nth-child(1),
+.footer-amount > .tax > p:nth-child(2) > span:nth-child(2),
+.footer-amount > .tax > p:nth-child(2) > span:nth-child(3),
+.footer-amount > .tax > p:nth-child(2) > span:nth-child(4),
+.footer-amount > .tax > p:nth-child(3) > span:nth-child(1),
+.footer-amount > .tax > p:nth-child(3) > span:nth-child(2),
+.footer-amount > .tax > p:nth-child(3) > span:nth-child(3),
+.footer-amount > .tax > p:nth-child(3) > span:nth-child(4) {
+	border-left: 0;
+	border-bottom: 0;
+}
+
+.footer-amount > .tax > p:nth-child(4) > span:nth-child(1),
+.footer-amount > .tax > p:nth-child(4) > span:nth-child(2),
+.footer-amount > .tax > p:nth-child(4) > span:nth-child(3),
+.footer-amount > .tax > p:nth-child(4) > span:nth-child(4) {
+	border-left: 0;
+}
+
+.footer-amount > .tax > p:nth-child(1) > span:nth-child(1),
+.footer-amount > .tax > p:nth-child(1) > span:nth-child(2),
+.footer-amount > .tax > p:nth-child(5) > span:nth-child(1),
+.footer-amount > .tax > p:nth-child(5) > span:nth-child(2) {
+	border-left: 0;
+	border-bottom: 0;
+	border-top: 0;
+} */
+
+.footer-amount > .tax > p > input {
+	text-align: center;
+}
+
+.footer-amount > .tax > p > span > input {
+	text-align: center;
+	margin: 2px;
 }
 
 .footer-amount > .price-words > p > textarea {
@@ -236,6 +320,7 @@ td:nth-child(6) > input {
 
 .footer-account-details-tax > .total-tax {
 	border: 1px solid;
+	/* width: 500px; */
 }
 
 .footer-end-details {
@@ -256,7 +341,7 @@ td:nth-child(6) > input {
 }
 
 .footer-end-details > .signature {
-	border: 1px solid;
+	/* border: 1px solid; */
 }
 
 .footer-end-details > .signature > p:nth-child(2) {

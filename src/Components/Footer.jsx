@@ -10,43 +10,69 @@ export default function Footer() {
 				</div>
 				<div className="tax">
 					<p>
-						TOTAL AMOUNT BEFORE TAX <input type="text" />
+						<span>TOTAL AMOUNT BEFORE TAX</span>
+						<span>
+							<input type="text" />
+						</span>
 					</p>
 					<p>
-						CGST <input type="text" />
-						%
-						<input type="text" />
+						<span>CGST</span>
+						<span>
+							<input type="text" />
+						</span>
+						<span>%</span>
+
+						<span>
+							<input type="text" />
+						</span>
+					</p>
+
+					<p>
+						<span>SGST</span>
+						<span>
+							<input type="text" />
+						</span>
+						<span>%</span>
+
+						<span>
+							<input type="text" />
+						</span>
+					</p>
+					<p>
+						<span>IGST</span>
+						<span>
+							<input type="text" />
+						</span>
+						<span>%</span>
+
+						<span>
+							<input type="text" />
+						</span>
+					</p>
+					<p>
+						<span>TOTAL AMOUNT</span>
+
+						<span>
+							<input type="text" />
+						</span>
 					</p>
 				</div>
 			</div>
 
-			<div className="footer-account-details-tax">
-				<div className="account-details">
-					<p>Account no. : 924020041898988</p>
-					<p>IFSC: UTIB0000193</p>
-					<p>Kukatpally Branch</p>
-				</div>
-				<div className="total-tax">
-					<p>
-						SGST <input type="text" />
-						%
-						<input type="text" />
-					</p>
-					<p>
-						IGST <input type="text" />
-						%
-						<input type="text" />
-					</p>
-				</div>
-			</div>
+			{/* <div className="footer-account-details-tax">
+				<div className="account-details"></div>
+			</div> */}
 
 			<div className="footer-end-details">
 				<div className="terms">
+					<p>Account no. : 924020041898988</p>
+					<p>IFSC: UTIB0000193</p>
+					<p>Kukatpally Branch</p>
 					<p>
 						Transport Mode: <input type="text" />
 					</p>
 					<p>
-						Vehicke Number: <input type="text" />
+						Vehicle Number: <input type="text" />
 					</p>
 					<p>
 						Date of Supply: <input type="text" />

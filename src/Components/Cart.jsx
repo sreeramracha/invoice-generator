@@ -22,25 +22,27 @@ export default function Cart() {
 	function handleRows(index, name, value) {
 		const updatedRows = [...rows];
 
-		if (name === "serialNumber") {
-			// setSerialNumber(Number(value));
-			updatedRows[index][name] = Number(value);
-		} else if (name === "description") {
-			// setDescription(value);
-			updatedRows[index][name] = value;
-		} else if (name === "hsnCode") {
-			// setHsnCode(value);
-			updatedRows[index][name] = value;
-		} else if (name === "quantity") {
-			// setQuantity(Number(value));
-			updatedRows[index][name] = Number(value);
-		} else if (name === "rate") {
-			// setRate(parseFloat(value));
-			updatedRows[index][name] = parseFloat(value);
-		} else if (name === "taxableValue") {
-			// setTaxableValue(parseFloat(value));
-			updatedRows[index][name] = parseFloat(value);
-		}
+		// if (name === "serialNumber") {
+		// 	// setSerialNumber(Number(value));
+		// 	updatedRows[index][name] = Number(value);
+		// } else if (name === "description") {
+		// 	// setDescription(value);
+		// 	updatedRows[index][name] = value;
+		// } else if (name === "hsnCode") {
+		// 	// setHsnCode(value);
+		// 	updatedRows[index][name] = value;
+		// } else if (name === "quantity") {
+		// 	// setQuantity(Number(value));
+		// 	updatedRows[index][name] = Number(value);
+		// } else if (name === "rate") {
+		// 	// setRate(parseFloat(value));
+		// 	updatedRows[index][name] = parseFloat(value);
+		// } else if (name === "taxableValue") {
+		// 	// setTaxableValue(parseFloat(value));
+		// 	updatedRows[index][name] = parseFloat(value);
+		// }
+
+		updatedRows[index][name] = value;
 
 		if (index === rows.length - 1) {
 			updatedRows.push({

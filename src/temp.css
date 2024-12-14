@@ -1,0 +1,63 @@
+.footer-amount {
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid;
+}
+
+.footer-amount > .price-words > p,
+.footer-amount > .tax > p {
+	margin: 3px 5px;
+}
+
+.footer-amount > .tax {
+	border: 1px solid;
+}
+
+.footer-amount > .price-words > p > textarea {
+	margin: 2px;
+	width: 500px;
+	height: 50px;
+	word-wrap: break-word;
+	resize: none;
+}
+
+.footer-account-details-tax {
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid;
+}
+
+.footer-account-details-tax > .account-details > p,
+.footer-account-details-tax > .total-tax > p {
+	margin: 3px 5px;
+}
+
+.footer-account-details-tax > .total-tax {
+	border: 1px solid;
+	/* width: 500px; */
+}
+
+.footer-end-details {
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid;
+}
+
+.signature {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.footer-end-details > .terms > p,
+.footer-end-details > .signature > p {
+	margin: 3px 5px;
+}
+
+.footer-end-details > .signature {
+	border: 1px solid;
+}
+
+.footer-end-details > .signature > p:nth-child(2) {
+	text-align: center;
+}
