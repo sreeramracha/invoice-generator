@@ -17,6 +17,38 @@ export default function Cart() {
 			rate: null,
 			taxableValue: null,
 		},
+		{
+			serialNumber: null,
+			description: null,
+			hsnCode: null,
+			quantity: null,
+			rate: null,
+			taxableValue: null,
+		},
+		{
+			serialNumber: null,
+			description: null,
+			hsnCode: null,
+			quantity: null,
+			rate: null,
+			taxableValue: null,
+		},
+		{
+			serialNumber: null,
+			description: null,
+			hsnCode: null,
+			quantity: null,
+			rate: null,
+			taxableValue: null,
+		},
+		{
+			serialNumber: null,
+			description: null,
+			hsnCode: null,
+			quantity: null,
+			rate: null,
+			taxableValue: null,
+		},
 	]);
 
 	function handleRows(index, name, value) {
